@@ -1,18 +1,18 @@
 {
-    "name": "cypress-xray-plugin",
+    "name": "cypress-xray-plugin-v14",
     "version": "7.5.0",
     "description": "A Cypress plugin for uploading test results to Xray (test management for Jira)",
     "types": "index.d.ts",
     "author": "csvtuda",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Qytera-Gmbh/cypress-xray-plugin"
+        "url": "https://github.com/CaiqueCoelho/cypress-xray-plugin"
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/Qytera-Gmbh/cypress-xray-plugin/issues"
+        "url": "https://github.com/CaiqueCoelho/cypress-xray-plugin/issues"
     },
-    "homepage": "https://qytera-gmbh.github.io/projects/cypress-xray-plugin",
+    "homepage": "https://github.com/CaiqueCoelho/cypress-xray-plugin",
     "keywords": [
         "cypress",
         "xray",
