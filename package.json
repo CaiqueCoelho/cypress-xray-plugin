@@ -27,9 +27,9 @@
         "*.ts"
     ],
     "exports": {
-        ".": "./index.js",
-        "./commands": "./src/cypress/commands.js",
-        "./commands/tasks": "./src/cypress/index.js"
+        ".": "./index.ts",
+        "./commands": "./src/cypress/commands.ts",
+        "./commands/tasks": "./src/cypress/index.ts"
     },
     "directories": {
         "lib": "src"
