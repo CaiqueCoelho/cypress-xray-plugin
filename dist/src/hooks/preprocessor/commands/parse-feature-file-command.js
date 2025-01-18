@@ -1,0 +1,26 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ParseFeatureFileCommand = void 0;
+const dedent_1 = require("../../../util/dedent");
+const errors_1 = require("../../../util/errors");
+const logging_1 = require("../../../util/logging");
+const command_1 = require("../../command");
+const gherkin_1 = require("./parsing/gherkin");
+class ParseFeatureFileCommand extends command_1.Command {
+    computeResult() {
+        try {
+            this.logger.message(logging_1.Level.INFO, `Parsing feature file: ${this.parameters.filePath}`);
+            return (0, gherkin_1.parseFeatureFile)(this.parameters.filePath);
+        }
+        catch (error) {
+            throw new Error((0, dedent_1.dedent)(`
+                    ${this.parameters.filePath}
+
+                      Failed to parse feature file.
+
+                        ${(0, errors_1.errorMessage)(error)}
+                `));
+        }
+    }
+}
+exports.ParseFeatureFileCommand = ParseFeatureFileCommand;

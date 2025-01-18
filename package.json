@@ -1,6 +1,6 @@
 {
     "name": "cypress-xray-plugin-v14",
-    "version": "7.5.1",
+    "version": "7.5.5",
     "description": "A Cypress plugin for uploading test results to Xray (test management for Jira)",
     "types": "index.d.ts",
     "author": "csvtuda",
@@ -22,14 +22,14 @@
         "cucumber"
     ],
     "files": [
-        "src",
+        "dist/src/",
         "*.js",
         "*.ts"
     ],
     "exports": {
-        ".": "./index.ts",
-        "./commands": "./src/cypress/commands.ts",
-        "./commands/tasks": "./src/cypress/index.ts"
+        ".": "./dist/index.js",
+        "./commands": "./dist/src/cypress/commands.js",
+        "./commands/tasks": "./dist/src/cypress/index.js"
     },
     "directories": {
         "lib": "src"
